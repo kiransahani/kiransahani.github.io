@@ -1,19 +1,216 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>
-Welcome
-</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#004AAD">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/titlelogo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c6d2061341.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<h1 style="background-color:powderblue;"><centre> Hello World </centre></h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/iran.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Achievement">Achievements</a></li>
+                    <li><a href="#cerificate">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hi, I'm <span>Kiran</span> Sahani <br>From Mumbai.</h1>
+            </div>
+        </div>
 
-<h1><center> Welcome World  </center></h1>
-<h1> <center> Good Luck </center> </h1>
-  <h2 style="color:black"> <p>The earth, together with all of its countries and peoples.</p> </h2>
-  <h2 style="color:black"> <P>The Global Competitive Report (2021) by the World Economic Forum ranks India at 43.</p> </h2>
-  
+    </div>
+    <!-------------------------About Me-------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img 5.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="styletext">I am a person with positive attitude in life and I am always energetic and
+                        eager to learn new skills specially in technology.
+                        I always try to learn new things and I am a quick learner. I am a person who is always ready to
+                        help others. I am also serios about my work and I am a person who is always ready to face
+                        challenges in life.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
 
+                    </div>
+                    <div class="tab-content  active-tab" id="skill">
+                        <ul>
+                            <li><span>Web Development</span><br>Web Designing</li>
+                            <li><span>Video Editing</span><br>Adobe Premiere Pro</li>
+                            <li><span>App Development</span><br>Application Designing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2020-2023</span><br>Bachelor of Commerce <br> Specialization: Computer Application
+                            </li>
+                            <li><span>2018-2020</span><br> HSC <br> MCVC Vocational Course <br> Specialization: BFSI
+                                (Banking Financial Services & Insurance)</li>
+                            <li><span>2018</span><br> SSC <br> Maharashtra Bal Vikas High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------Achievement----------------- -->
+    <div id="Achievement">
+        <div class="container">
+            <h1 class="subtitle"> Achievements</h1>
+            <div class="achiv-list">
+                <div>
+                    <h2>Video Making</h2>
+                    <p>1st Prize in Blurboassurance Competition <br>Department of Banking and Insurance from Vidyalankar
+                        College, 2022.</p>
+                    <a href="images/IMG20220922155239.jpg" download class="btn2">Learn More</a>
+                </div>
+
+                <div>
+                    <h2>Essay Competition</h2>
+                    <p>2nd Prize in Hindi Essay Competition <br> Department of Hindi from SNDT College, 2022.</p>
+                    <a href="images/Hindi Essay aatam nirbar Bharat competition 2nd price.jpg" download class="btn2">Learn More</a>
+                </div>
+
+                <div>
+                    <h2>Video Making</h2>
+                    <p>2nd Prize in Environment Awareness Week <br> Theme: Water Conservation- Need of the Hour <br>
+                        Department of Commerce from SNDT College, 2021.</p>
+                    <a href="images/VIDEO MAKING COMPITITION WIN.pdf" download class="btn2">Learn More</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--------------------------Certificates----------------- -->
+    <div id="cerificate">
+        <div class="container">
+            <h1 class="subtitle"> Certificates </h1>
+            <div class="box-big">
+                <h1>Digital Transformation in Practice:
+                    Virtual Collaboration Tools</h1>
+                <a href="images/_CERTIFICATE Kiran Sahani.pdf" download class="btn"> Show Certificate</a>
+
+            </div>
+
+            <div class="box-big">
+                <h1>The Fundamentals of Digital Marketing</h1>
+                <a href="images/The Fundamentals of Digital Marketing (Google Certificate).pdf" download class="btn"> Show Certificate</a>
+
+            </div>
+
+            <div class="box-big">
+                <h1>Spoken English Course</h1>
+                <a href="images/SPOKEN English Course.pdf" download class="btn"> Show Certificate</a>
+
+            </div>
+
+            
+            <div class="box-big">
+                <h1>The Online Training: Introduction to Digital Journalism</h1>
+                <a href="images/Digital Journalism..png" download class="btn"> Show Certificate</a>
+
+            </div>
+            <a href="see.html" class="btn1"> See More</a>
+        </div>
+    </div>
+    <!--------------------------Contact----------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle"> Contact Me </h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> kiransahani308@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume"></i> 8879913774</p>
+                    <div class="social-icons">
+                        <a href="http://facebook.com"><i class="fa-brands fa-facebook" target="blank"></i></a>
+                        <a href="http://twitter.com"><i class="fa-brands fa-twitter-square" target="_blank"></i></a>
+                        <a href="http://instagram.com"><i class="fa-brands fa-instagram" target="_blank"></i></a>
+                        <a href="https://www.linkedin.com/in/sahanikiran/"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
+                    </div>
+                    <a href="images/Kiran Sahani CV.pdf" download class="btn btn3"> Download CV  </a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email Id" placeholder="Your Email Id" required>
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">  Submit  <i class="fa-solid fa-paper-plane"></i> </button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 Kiran Sahani. Made with <i class="fas fa-heart"></i> by me</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontent = document.getElementsByClassName("tab-content");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links")
+            }
+            for (tabcontents of tabcontent) {
+                tabcontents.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-links")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0px";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwGN8ztas9Bw_zFxiV-SKKcofOBYyE7kVxd4VABKVKur2J0DnsLj0ZUZNlmZ2FHwmzQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Successfully Sent. Thank You for Messaging Me!"
+                setTimeout(function(){ msg.innerHTML = ""}, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 
 </body>
+
 </html>
